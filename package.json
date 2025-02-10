@@ -1,6 +1,6 @@
 {
   "name": "my-app",
-  "homepage": "/home",
+  "homepage": "https://harounthegreat.github.io/my-portfolio/",
   "version": "0.1.0",
   "private": true,
   "dependencies": {
