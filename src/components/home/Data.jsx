@@ -57,9 +57,8 @@ const Data = () => {
       </h1>
       <h3 className="home__subtitle">Web Developer</h3>
       <p className="home__description">
-        Software Engineer and Full-Stack Developer skilled in Angular, React,
-        Node.js, and PHP Symfony. Experienced in building scalable apps,
-        managing databases, and applying DevOps practices.
+        Developer with a passion for creating innovative solutions and enhancing
+        the user experience through code.
       </p>
       <a href="#contact" className="button button--flex">
         Say Hello

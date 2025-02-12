@@ -12,19 +12,19 @@ const Social = () => {
       </a>
 
       <a
-        href="https://twitter.com/Powxu_XD"
-        className="home__social-icon"
-        target="_blank"
-      >
-        <i class="uil uil-twitter"></i>
-      </a>
-
-      <a
-        href="https://github.com/Haroun-3000"
+        href="https://github.com/HarounTheGreat"
         className="home__social-icon"
         target="_blank"
       >
         <i class="uil uil-github-alt"></i>
+      </a>
+
+      <a
+        href="https://www.facebook.com/haroun.bouriga.75/"
+        className="home__social-icon"
+        target="_blank"
+      >
+        <i class="uil uil-facebook"></i>
       </a>
     </div>
   );
