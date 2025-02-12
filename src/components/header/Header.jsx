@@ -83,14 +83,14 @@ const Header = () => {
             </li>
             <li className="nav__item">
               <a
-                href="#portfolio"
+                href="#achievements"
                 className={
-                  activeNav === "#portfolio"
+                  activeNav === "#achievements"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
-                <i className="uil uil-scenery nav__icon"></i>Portfolio
+                <i className="uil uil-scenery nav__icon"></i>Achievements
               </a>
             </li>
             <li className="nav__item">

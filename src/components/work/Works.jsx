@@ -1,6 +1,7 @@
 import React, { useEffect, useState } from "react";
 import { projectsData } from "./data";
 import WorkItems from "./WorkItems";
+import PersonalProject from "./PersonalProject";
 
 const Works = () => {
   const [item, setItem] = useState({ name: "all" });
@@ -36,6 +37,7 @@ const Works = () => {
           );
         })}
       </div>
+      <PersonalProject />
     </div>
   );
 };
