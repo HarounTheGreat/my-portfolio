@@ -11,7 +11,7 @@ export const projectsData = [
     image: Work7,
     title: "AI Summarizer",
     category: "web",
-    deploymentLink: "https://github.com/Atharva-3000/summarizer",
+    deploymentLink: "https://github.com/Haroun-3000/summarizer",
   },
   {
     id: 2,
@@ -39,7 +39,7 @@ export const projectsData = [
     image: Work3,
     title: "Dino Runner",
     category: "web",
-    deploymentLink: "https://dino-game-atharva-3000.netlify.app/",
+    deploymentLink: "https://dino-game-Haroun-3000.netlify.app/",
   },
   {
     id: 6,
@@ -58,9 +58,9 @@ export const projectsData = [
 ];
 
 export const projectsNav = [
-    {
-        name: "all",
-      },
+  {
+    name: "all",
+  },
   {
     name: "web",
   },

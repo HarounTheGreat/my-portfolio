@@ -31,12 +31,13 @@ const Contact = () => {
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
-                deshmukhsambhajirao9@gmail.com
+                Bourigasambhajirao9@gmail.com
               </span>
 
               <a
-                href="mailto:deshmukhsambhajirao9@gmail.com"
-                className="contact__button" target="_blank"
+                href="mailto:Bourigasambhajirao9@gmail.com"
+                className="contact__button"
+                target="_blank"
               >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -51,7 +52,8 @@ const Contact = () => {
 
               <a
                 href="https://api.whatsapp.com/send?phone=918103548618&text=Hello, more information!"
-                className="contact__button" target="_blank"
+                className="contact__button"
+                target="_blank"
               >
                 Write me{" "}
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -64,7 +66,11 @@ const Contact = () => {
               <h3 className="contact__card-title">Telegram</h3>
               <span className="contact__card-data">@ultra_doge</span>
 
-              <a href="https://t.me/ultra_doge" className="contact__button" target="_blank">
+              <a
+                href="https://t.me/ultra_doge"
+                className="contact__button"
+                target="_blank"
+              >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
@@ -107,7 +113,6 @@ const Contact = () => {
             <button className="button button--flex">
               Send Message
               <svg
-              
                 class="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"

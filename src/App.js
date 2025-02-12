@@ -20,7 +20,7 @@ function App() {
         <Skills />
         <Services />
         <Qualifications />
-        <Work/>
+        <Work />
         <Contact />
       </main>
       <Footer />
