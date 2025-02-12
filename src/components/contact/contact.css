@@ -15,6 +15,7 @@
 .contact__info {
     margin: auto;
     display: flex;
+    flex-wrap: wrap;
     row-gap: 1rem;
     gap: 1%;
     justify-content: center; /* Centers horizontally */

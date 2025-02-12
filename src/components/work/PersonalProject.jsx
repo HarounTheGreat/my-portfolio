@@ -1,29 +1,60 @@
-import React from "react";
+import React, { useState, useEffect } from "react";
 import sDrive_1 from "../../assets/anbester.jpg";
-import sDrive_2 from "../../assets/anbester_1.jpg"; // Add your second image
+import sDrive_2 from "../../assets/anbester_1.jpg";
 
 const PersonalProject = () => {
-  // Replace these with your Google Drive direct links
   const video1Link =
-    "https://drive.google.com/uc?export=download&id=YOUR_VIDEO_1_ID";
+    "https://drive.google.com/file/d/1rcq0fHewZRLpl5vnSCVDe96XPH_KxWEX/preview";
   const video2Link =
-    "https://drive.google.com/uc?export=download&id=YOUR_VIDEO_2_ID";
+    "https://drive.google.com/file/d/1WEaUf4XhcrzUp8X1Q1OemLcRlYRvdQ2e/preview";
+
+  const [isMobile, setIsMobile] = useState(window.innerWidth <= 768);
+
+  useEffect(() => {
+    const handleResize = () => {
+      setIsMobile(window.innerWidth <= 768);
+    };
+
+    window.addEventListener("resize", handleResize);
+    return () => window.removeEventListener("resize", handleResize);
+  }, []);
+
+  // Responsive styles
+  const responsiveStyles = {
+    section: {
+      padding: "2rem 1rem",
+      textAlign: "center",
+    },
+    title: {
+      fontSize: isMobile ? "1.5rem" : "2rem",
+      fontWeight: "bold",
+      marginBottom: "1rem",
+    },
+    subtitle: {
+      fontSize: isMobile ? "1rem" : "1.2rem",
+      color: "#666",
+      marginBottom: "2rem",
+      display: "block",
+    },
+    mediaGrid: {
+      display: "grid",
+      gridTemplateColumns: isMobile ? "1fr" : "repeat(2, 1fr)",
+      gap: "1rem",
+      marginTop: "1.5rem",
+    },
+    iframe: {
+      width: "100%",
+      height: isMobile ? "200px" : "300px",
+      border: "none",
+    },
+  };
 
   return (
-    <section style={{ padding: "2rem 0", textAlign: "center" }}>
-      <h2
-        style={{ fontSize: "2rem", fontWeight: "bold", marginBottom: "1rem" }}
-      >
+    <section style={responsiveStyles.section}>
+      <h2 style={responsiveStyles.title}>
         Personal Project - Startup Initiative
       </h2>
-      <span
-        style={{
-          fontSize: "1.2rem",
-          color: "#666",
-          marginBottom: "2rem",
-          display: "block",
-        }}
-      >
+      <span style={responsiveStyles.subtitle}>
         AI-Powered Business Insights Platform
       </span>
 
@@ -48,33 +79,9 @@ const PersonalProject = () => {
             end-of-studies project, aiming to provide AI-powered business
             insights.
           </h3>
-          <div style={{ textAlign: "left", marginBottom: "1.5rem" }}>
-            <ul style={{ listStyle: "none", padding: "0" }}>
-              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
-                <strong>Team Formation & Leadership:</strong> Built and managed
-                a dynamic team to tackle complex AI challenges.
-              </li>
-              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
-                <strong>AI Open Challenge 2022 Winner:</strong> Led a team to
-                1st place, showcasing innovation, problem-solving, and technical
-                excellence.
-              </li>
-              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
-                <strong>Tools Used:</strong> Angular, Python (Web Scraping, AI),
-                Power BI
-              </li>
-            </ul>
-          </div>
 
           {/* Media Section */}
-          <div
-            style={{
-              display: "grid",
-              gridTemplateColumns: "repeat(2, 1fr)",
-              gap: "1rem",
-              marginTop: "1.5rem",
-            }}
-          >
+          <div style={responsiveStyles.mediaGrid}>
             {/* Image 1 */}
             <div
               style={{
@@ -107,7 +114,7 @@ const PersonalProject = () => {
               />
             </div>
 
-            {/* Video 1 */}
+            {/* Video 1 (Google Drive Video) */}
             <div
               style={{
                 border: "1px solid #ddd",
@@ -116,16 +123,14 @@ const PersonalProject = () => {
                 transition: "transform 0.3s ease",
               }}
             >
-              <video
-                controls
-                style={{ width: "100%", height: "auto", display: "block" }}
-              >
-                <source src={video1Link} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                src={video1Link}
+                style={responsiveStyles.iframe}
+                allow="autoplay"
+              />
             </div>
 
-            {/* Video 2 */}
+            {/* Video 2 (Google Drive Video) */}
             <div
               style={{
                 border: "1px solid #ddd",
@@ -134,14 +139,31 @@ const PersonalProject = () => {
                 transition: "transform 0.3s ease",
               }}
             >
-              <video
-                controls
-                style={{ width: "100%", height: "auto", display: "block" }}
-              >
-                <source src={video2Link} type="video/mp4" />
-                Your browser does not support the video tag.
-              </video>
+              <iframe
+                src={video2Link}
+                style={responsiveStyles.iframe}
+                allow="autoplay"
+              />
             </div>
+          </div>
+
+          {/* Description Section */}
+          <div style={{ textAlign: "left", marginTop: "1.5rem" }}>
+            <ul style={{ listStyle: "none", padding: "0" }}>
+              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
+                <strong>Team Formation & Leadership:</strong> Built and managed
+                a dynamic team to tackle complex AI challenges.
+              </li>
+              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
+                <strong>AI Open Challenge 2022 Winner:</strong> Led a team to
+                1st place, showcasing innovation, problem-solving, and technical
+                excellence.
+              </li>
+              <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
+                <strong>Tools Used:</strong> Angular, Python (Web Scraping, AI),
+                Power BI
+              </li>
+            </ul>
           </div>
         </div>
       </div>
