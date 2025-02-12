@@ -9,6 +9,7 @@ import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
 import ScrollDown from "./components/home/ScrollDown";
 import ScrollUp from "./components/scrollup/ScrollUp";
+import Achievements from "./components/achievement/Achievements";
 import Work from "./components/work/Work";
 function App() {
   return (

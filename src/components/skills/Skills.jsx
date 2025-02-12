@@ -3,6 +3,9 @@ import "./skills.css";
 import Backend from "./Backend";
 import Frontend from "./Frontend";
 import Design from "./Design";
+import Database from "./Database";
+import DataAnalysis from "./DataAnalysis";
+import DevOps from "./DevOps";
 const Skills = () => {
   return (
     <section className="skills section" id="skills">
@@ -12,6 +15,9 @@ const Skills = () => {
       <div className="skills__container container grid">
         <Frontend />
         <Backend />
+        <Database />
+        <DataAnalysis />
+        <DevOps />
         <Design />
       </div>
     </section>
