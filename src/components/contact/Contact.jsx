@@ -1,6 +1,7 @@
 import React, { useRef } from "react";
 import emailjs from "@emailjs/browser";
 import "./contact.css";
+
 const Contact = () => {
   const form = useRef();
 
@@ -31,13 +32,14 @@ const Contact = () => {
 
               <h3 className="contact__card-title">Email</h3>
               <span className="contact__card-data">
-                Bourigasambhajirao9@gmail.com
+                harounbouriga99@gmail.com
               </span>
 
               <a
-                href="mailto:Bourigasambhajirao9@gmail.com"
+                href="mailto:harounbouriga99@gmail.com"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
                 Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
@@ -48,30 +50,32 @@ const Contact = () => {
               <i className="bx bxl-whatsapp contact__card-icon"></i>
 
               <h3 className="contact__card-title">WhatsApp</h3>
-              <span className="contact__card-data">+91 81035XXXXX</span>
+              <span className="contact__card-data">+216 93 234 428</span>
 
               <a
-                href="https://api.whatsapp.com/send?phone=918103548618&text=Hello, more information!"
+                href="https://api.whatsapp.com/send?phone=21693234428&text=Hello, more information!"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Write me{" "}
+                Write me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
 
             <div className="contact__card">
-              <i className="bx bxl-telegram contact__card-icon"></i>
+              <i className="bx bxl-linkedin contact__card-icon"></i>
 
-              <h3 className="contact__card-title">Telegram</h3>
-              <span className="contact__card-data">@ultra_doge</span>
+              <h3 className="contact__card-title">LinkedIn</h3>
+              <span className="contact__card-data">Haroun Bouriga</span>
 
               <a
-                href="https://t.me/ultra_doge"
+                href="https://www.linkedin.com/in/haroun-bouriga-2167a2196/"
                 className="contact__button"
                 target="_blank"
+                rel="noopener noreferrer"
               >
-                Write me
+                Connect with me
                 <i className="bx bx-right-arrow-alt contact__button-icon"></i>
               </a>
             </div>
@@ -84,7 +88,7 @@ const Contact = () => {
             <div className="contact__form-div">
               <label className="contact__form-tag">Name</label>
               <input
-                type="name"
+                type="text"
                 name="name"
                 className="contact__form-input"
                 placeholder="Enter your name"
@@ -113,7 +117,7 @@ const Contact = () => {
             <button className="button button--flex">
               Send Message
               <svg
-                class="button__icon"
+                className="button__icon"
                 xmlns="http://www.w3.org/2000/svg"
                 width="24"
                 height="24"
