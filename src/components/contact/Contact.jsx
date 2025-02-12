@@ -2,11 +2,13 @@ import "./contact.css";
 
 const Contact = () => {
   return (
-    <section className="contact section" id="contact">
+    <section className="contact" id="contact">
       <h2 className="section__title">Get in Touch</h2>
-      <span className="section__subtitle">Talk to me</span>
+      <span className="section__subtitle " style={{ marginBottom: "1%" }}>
+        Talk to me
+      </span>
 
-      <div className=" container grid">
+      <div style={{ marginBottom: "1%" }}>
         <div className="contact__content">
           <div className="contact__info">
             <div className="contact__card">

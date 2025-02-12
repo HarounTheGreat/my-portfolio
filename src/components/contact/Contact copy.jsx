@@ -79,7 +79,7 @@ const Contact = () => {
           </div>
         </div>
 
-        {/* <div className="contact__content">
+        <div className="contact__content">
           <h3 className="contact__title">Write me your message</h3>
           <form ref={formRef} onSubmit={sendEmail} className="contact__form">
             <div className="contact__form-div">
@@ -136,7 +136,7 @@ const Contact = () => {
               </svg>
             </button>
           </form>
-        </div> */}
+        </div>
       </div>
     </section>
   );
