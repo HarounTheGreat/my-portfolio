@@ -73,16 +73,17 @@ const Header = () => {
 
             <li className="nav__item">
               <a
-                href="#services"
+                href="#education"
                 className={
-                  activeNav === "#services"
+                  activeNav === "#education"
                     ? "nav__link active-link"
                     : "nav__link"
                 }
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                <i className="uil uil-file-alt nav__icon"></i>Education
               </a>
             </li>
+
             <li className="nav__item">
               <a
                 href="#achievements"
@@ -93,6 +94,19 @@ const Header = () => {
                 }
               >
                 <i className="uil uil-scenery nav__icon"></i>Achievements
+              </a>
+            </li>
+
+            <li className="nav__item">
+              <a
+                href="#services"
+                className={
+                  activeNav === "#services"
+                    ? "nav__link active-link"
+                    : "nav__link"
+                }
+              >
+                <i className="uil uil-briefcase-alt nav__icon"></i>Services
               </a>
             </li>
 

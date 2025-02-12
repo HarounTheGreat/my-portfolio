@@ -33,11 +33,30 @@
     border-radius: 1rem;
 }
 
-.work__img{
-    width: 295px;
+.work__img {
+    width: 100%; /* Full width by default */
+    height: auto; /* Maintain aspect ratio */
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
-}
+  }
+  
+  @media screen and (min-width: 768px) {
+    .work__img {
+      max-width: 500px; /* Adjust this value as needed */
+      margin: 0 auto; /* Center the image */
+    }
+  }
+  
+  @media screen and (max-width: 768px) {
+    .work__img {
+      width: 100%; /* Full width on smaller screens */
+    }
+  }
+  .work__img:hover {
+    transform: scale(1.05); /* Scale up the image by 5% on hover */
+    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
+  }
+  
 
 .work__title{
     font-size: var(--normal-font-size);

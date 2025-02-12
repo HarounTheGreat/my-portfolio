@@ -54,11 +54,15 @@
     font-weight: var(--font-medium);
 }
 
-.qualification__subtitle{
+.qualification__subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
     margin-bottom: var(--mb-1);
-}
+    white-space: normal; /* Allow text to wrap to new lines */
+    word-wrap: break-word; /* Break long words if necessary */
+    overflow-wrap: break-word; /* Ensure long words break properly */
+    max-width: 100%; /* Ensure text doesn't exceed container width */
+  }
 
 .qualification__calendar{
     font-size: var(--small-font-size);

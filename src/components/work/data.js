@@ -4,6 +4,7 @@ import TCPC from "../../assets/TCPC.jpg";
 import IEEE from "../../assets/IEEE.jpg";
 import GDSC from "../../assets/GDSC.jpg";
 import red_crescent from "../../assets/red_crescent.jpg";
+import arsi from "../../assets/arsi.jpg";
 
 export const projectsData = [
   {
@@ -41,11 +42,12 @@ export const projectsData = [
       "Taught Photoshop and Illustrator design skills to club members.",
     image: GDSC,
   },
+
+  {
+    id: 6,
+    title: "Programming Algorithm Contest",
+    description:
+      "Participated in a programming algorithm contest and secured a top 3 position.",
+    image: arsi,
+  },
 ];
-// {
-//   id: 7,
-//   image: Work5,
-//   title: "Login Bootstrap UI",
-//   category: "design",
-//   deploymentLink: "https://login-via-bootstrap.netlify.app/",
-// }
