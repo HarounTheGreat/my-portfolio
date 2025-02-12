@@ -14,7 +14,7 @@ const Footer = () => {
 
           <li>
             <a href="#portfolio" className="footer__link">
-              Projects
+              Achievements
             </a>
           </li>
 
@@ -27,27 +27,27 @@ const Footer = () => {
 
         <div className="footer__social">
           <a
-            href="https://www.instagram.com/Haroun_xoxo/"
+            href="https://www.linkedin.com/in/haroun-bouriga-2167a2196/"
             className="footer__social-link"
             target="_blank"
           >
-            <i class="uil uil-instagram"></i>
+            <i class="uil uil-linkedin"></i>
           </a>
 
           <a
-            href="https://linktr.ee/Haroun_uwu"
-            className="footer__social-link"
-            target="_blank"
-          >
-            <i class="bx bx-link-alt"></i>
-          </a>
-
-          <a
-            href="https://github.com/Haroun-3000"
+            href="https://github.com/HarounTheGreat"
             className="footer__social-link"
             target="_blank"
           >
             <i class="uil uil-github-alt"></i>
+          </a>
+
+          <a
+            href="https://www.facebook.com/haroun.bouriga.75/"
+            className="footer__social-link"
+            target="_blank"
+          >
+            <i class="uil uil-facebook"></i>
           </a>
         </div>
 
