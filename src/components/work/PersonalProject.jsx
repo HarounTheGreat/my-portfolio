@@ -52,7 +52,7 @@ const PersonalProject = () => {
   return (
     <section style={responsiveStyles.section}>
       <h2 style={responsiveStyles.title}>
-        Personal Project - Startup Initiative
+        From End-of-Study Project to AI-Driven Platform
       </h2>
       <span style={responsiveStyles.subtitle}>
         AI-Powered Business Insights Platform

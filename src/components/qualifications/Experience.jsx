@@ -7,9 +7,7 @@ const Experience = () => {
       {/* <h2 className="section__title">
         Experience
       </h2> */}
-      <h2 className="section__title">
-        Junior Full-Stack Web Developer at Start-up
-      </h2>
+      <h2 className="section__title">Full-Stack Web Developer at Start-up</h2>
       <span className="section__subtitle">
         <div className="qualification__calendar">
           <i className="uil uil-calendar-alt"></i> 06/2023 - Present

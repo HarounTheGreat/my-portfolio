@@ -18,7 +18,7 @@ const Internships = () => {
                   End of Year Project
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 01/2021 - 05/2021
+                  <i className="uil uil-calendar-alt"></i> 01/2023 - 05/2023
                 </div>
                 <span className="qualification__subtitle">
                   Designed and developed a blood donation platform.

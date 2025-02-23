@@ -18,7 +18,7 @@ const About = () => {
             apps, managing databases, and applying DevOps practices. You can see
             what I am up to on my GitHub.
           </p>
-          <a download="" href={CV} className="button button--flex">
+          <a download="haroun_CV" href={CV} className="button button--flex">
             Download Resume
             <svg
               class="button__icon"
