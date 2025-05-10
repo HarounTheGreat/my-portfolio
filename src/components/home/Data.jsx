@@ -1,10 +1,14 @@
 import React from "react";
+import { useMyContext } from "../../MyContext";
 
 const Data = () => {
+  const { myData } = useMyContext();
+  const { name, position, dec } = myData?.home;
+
   return (
     <div className="home__data">
       <h1 className="home__title">
-        Haroun
+        {name}
         <svg
           width="36"
           height="36"
@@ -55,12 +59,12 @@ const Data = () => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">Web Developer</h3>
-      <p className="home__description">
-        Developer with a passion for creating innovative solutions and enhancing
-        the user experience through code.
-      </p>
-      <a href="#about" className="button button--flex">
+      <h3 className="home__subtitle">{position}</h3>
+      <p className="home__description">{dec}</p>
+      <a
+        href="#about"
+        className="button button--flex"
+      >
         Say Hello
         <svg
           class="button__icon"

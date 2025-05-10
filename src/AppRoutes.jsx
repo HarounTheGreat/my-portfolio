@@ -1,3 +1,4 @@
+import { useMyContext } from "./MyContext";
 import ProPage from "./Pages/ProPage";
 import VolunteeringPage from "./Pages/VolunteeringPage";
 
@@ -7,10 +8,17 @@ const PAGES = {
 };
 
 const getPage = () => {
-  return PAGES?.pro;
+  const currentUrl = window.location.href;
+  const isVolunteering = currentUrl.includes("volunteering");
+  const pageKey = isVolunteering ? "volunteering" : "pro";
+
+  return PAGES[pageKey];
 };
 
 const AppRoutes = () => {
+  const { loading } = useMyContext();
+  if (loading) return <>Loading</>;
+
   return getPage();
 };
 

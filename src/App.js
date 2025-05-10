@@ -1,7 +1,12 @@
 import AppRoutes from "./AppRoutes";
+import { MyProvider } from "./MyContext";
 
 function App() {
-  return <AppRoutes />;
+  return (
+    <MyProvider>
+      <AppRoutes />
+    </MyProvider>
+  );
 }
 
 export default App;
