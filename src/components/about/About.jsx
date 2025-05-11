@@ -1,24 +1,36 @@
 import React from "react";
+
 import "./about.css";
-import AboutImg from "../../assets/about.jpg";
-import CV from "../../assets/resume.pdf";
 import Info from "./Info";
+
+import CV from "assets/resume.pdf";
+
+import { useMyContext } from "MyContext";
 const About = () => {
+  const { myData } = useMyContext();
+  const { img, details, description } = myData?.ABOUT_ME;
+
   return (
-    <section className="about section" id="about">
+    <section
+      className="about section"
+      id="about"
+    >
       <h2 className="section__title">About Me</h2>
       <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img
+          src={img}
+          alt="About"
+          className="about__img"
+        />
         <div className="about__data">
-          <Info />
-          <p className="about__description">
-            Software Engineer and Full-Stack Developer skilled in Angular,
-            React, Node.js, and PHP Symfony. Experienced in building scalable
-            apps, managing databases, and applying DevOps practices. You can see
-            what I am up to on my GitHub.
-          </p>
-          <a download="haroun_CV" href={CV} className="button button--flex">
+          <Info details={details} />
+          <p className="about__description">{description}</p>
+          <a
+            download="haroun_CV"
+            href={CV}
+            className="button button--flex"
+          >
             Download Resume
             <svg
               class="button__icon"

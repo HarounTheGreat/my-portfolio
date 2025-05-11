@@ -1,3 +1,4 @@
+import { isVolunteering } from "Helper/getType";
 import { useMyContext } from "./MyContext";
 import ProPage from "./Pages/ProPage";
 import VolunteeringPage from "./Pages/VolunteeringPage";
@@ -8,9 +9,7 @@ const PAGES = {
 };
 
 const getPage = () => {
-  const currentUrl = window.location.href;
-  const isVolunteering = currentUrl.includes("volunteering");
-  const pageKey = isVolunteering ? "volunteering" : "pro";
+  const pageKey = isVolunteering() ? "volunteering" : "pro";
 
   return PAGES[pageKey];
 };

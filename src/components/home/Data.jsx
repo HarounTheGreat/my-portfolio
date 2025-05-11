@@ -1,9 +1,9 @@
 import React from "react";
-import { useMyContext } from "../../MyContext";
+import { useMyContext } from "MyContext";
 
 const Data = () => {
   const { myData } = useMyContext();
-  const { name, position, dec } = myData?.home;
+  const { name, position, dec } = myData?.HOME;
 
   return (
     <div className="home__data">

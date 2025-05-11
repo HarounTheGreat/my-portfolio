@@ -1,7 +1,25 @@
 {
-  "home": {
+  "HOME": {
     "name": "Haroun",
-    "position": "Web Developer",
-    "dec": "Developer with a passion for creating innovative solutions and enhancing the user experience through code."
+    "position": "Software engineer",
+    "dec": "passioting about volunteering",
+    "img": "profile.jpg"
+  },
+  "ABOUT_ME": {
+    "details": [
+      { "title": "Experience", "desc": "2 years", "icon": "bx-code-alt" },
+      {
+        "title": "Skills",
+        "desc": "Strong in scalable app development",
+        "icon": "bx-glasses"
+      },
+      {
+        "title": "Passion",
+        "desc": "Eager to collaborate and drive success",
+        "icon": "bx-award"
+      }
+    ],
+    "img": "https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcTG1SpeECPAvgQifEVUh4WwDT5S_CabR5im6g&s",
+    "description": "Software Engineer and Full-Stack Developer skilled in Angular, React, Node.js, and PHP Symfony. Experienced in building scalable apps, managing databases, and applying DevOps practices. You can see what I am up to on my GitHub."
   }
 }
