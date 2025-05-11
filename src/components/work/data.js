@@ -1,10 +1,10 @@
-import sDrive_2 from "../../assets/sDrive_2.jpg";
+import sDrive_2 from "assets/sDrive_2.jpg";
 
-import TCPC from "../../assets/TCPC.jpg";
-import IEEE from "../../assets/IEEE.jpg";
-import GDSC from "../../assets/GDSC.jpg";
-import red_crescent from "../../assets/red_crescent.jpg";
-import arsi from "../../assets/arsi.jpg";
+import TCPC from "assets/TCPC.jpg";
+import IEEE from "assets/IEEE.jpg";
+import GDSC from "assets/GDSC.jpg";
+import red_crescent from "assets/red_crescent.jpg";
+import arsi from "assets/arsi.jpg";
 
 export const projectsData = [
   {

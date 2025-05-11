@@ -1,6 +1,6 @@
 import React, { useState, useEffect } from "react";
-import sDrive_1 from "../../assets/anbester.jpg";
-import sDrive_2 from "../../assets/anbester_1.jpg";
+import sDrive_1 from "assets/anbester.jpg";
+import sDrive_2 from "assets/anbester_1.jpg";
 
 const PersonalProject = () => {
   const video1Link =
