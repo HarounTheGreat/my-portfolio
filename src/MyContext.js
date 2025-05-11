@@ -1,11 +1,17 @@
 import { createContext, useContext, useState, useEffect } from "react";
-import STATIC_DATA from "./pro.json";
+import STATIC_PRO_DATA from "./pro.json";
+import STATIC_VOL_DATA from "./volunteering.json";
+const getStaticData = () => {
+  const currentUrl = window.location.href;
+  const isVolunteering = currentUrl.includes("volunteering");
+  return isVolunteering;
+};
+
 const MyContext = createContext();
 
 export const MyProvider = ({ children }) => {
   const [myData, setMyData] = useState(null);
   const [loading, setLoading] = useState(true);
-  console.log(STATIC_DATA);
 
   useEffect(() => {
     const fetchData = async () => {
@@ -14,7 +20,9 @@ export const MyProvider = ({ children }) => {
         const data = await response.json();
         setMyData(data);
       } catch (error) {
-        setMyData(STATIC_DATA);
+        console.log(getStaticData());
+
+        setMyData(getStaticData() ? STATIC_VOL_DATA : STATIC_PRO_DATA);
       } finally {
         setLoading(false);
       }
