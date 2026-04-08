@@ -3,7 +3,8 @@ import "./home.css";
 import Social from "./Social";
 import Data from "./Data";
 import ScrollDown from "./ScrollDown";
-const Home = () => {
+
+const Home = ({ content }) => {
   return (
     <section className="home section" id="home">
       <div className="home__container container grid">
@@ -11,7 +12,7 @@ const Home = () => {
           <Social />
           <div className="home__img"></div>
 
-          <Data />
+          <Data content={content} />
         </div>
         <ScrollDown />
       </div>

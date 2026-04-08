@@ -7,19 +7,23 @@ import Services from "./components/services/Services";
 import Qualifications from "./components/qualifications/Qualifications";
 import Contact from "./components/contact/Contact";
 import Footer from "./components/footer/Footer";
-import ScrollDown from "./components/home/ScrollDown";
 import ScrollUp from "./components/scrollup/ScrollUp";
 import Work from "./components/work/Work";
+import roleContent, { getSelectedRole } from "./roleConfig";
+
 function App() {
+  const selectedRole = getSelectedRole();
+  const content = roleContent[selectedRole];
+
   return (
     <div className="App">
       <Header />
       <main className="main">
-        <Home />
-        <About />
+        <Home content={content} />
+        <About content={content} />
         <Qualifications />
         <Work />
-        <Skills />
+        <Skills content={content} />
         <Services />
         <Contact />
       </main>
