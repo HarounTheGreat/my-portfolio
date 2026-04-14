@@ -3,6 +3,7 @@
 /node_modules
 /.pnp
 /build
+/tasks
 .pnp.js
 # testing
 /coverage
