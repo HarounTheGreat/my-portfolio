@@ -15,16 +15,16 @@ const Internships = () => {
               <div>
                 <h3 className="qualification__title">Smarteo</h3>
                 <span className="qualification__subtitle">
-                  End of Year Project
+                  Software Engineering Intern
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 01/2023 - 05/2023
+                  <i className="uil uil-calendar-alt"></i> 12/2022 - 06/2023
                 </div>
                 <span className="qualification__subtitle">
-                  Designed and developed a blood donation platform.
+                  Built a full-stack blood donation management platform that
+                  led to a full-time conversion.
                   <br />
-                  <strong>Tech Stack:</strong> MERN Stack, Figma, Photoshop,
-                  Python, Power BI
+                  <strong>Tech Stack:</strong> MERN Stack, Power BI
                 </span>
               </div>
 
@@ -43,20 +43,42 @@ const Internships = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
+                <h3 className="qualification__title">SSH Engineering</h3>
+                <span className="qualification__subtitle">
+                  Software Engineering Intern
+                </span>
+                <div className="qualification__calendar">
+                  <i className="uil uil-calendar-alt"></i> 06/2022 - 08/2022
+                </div>
+                <span className="qualification__subtitle">
+                  Developed backend and frontend features, form validation, and
+                  internal web application improvements.
+                  <br />
+                  <strong>Tech Stack:</strong> PHP, JavaScript
+                </span>
+              </div>
+            </div>
+
+            <div className="qualification__data">
+              <div>
                 <h3 className="qualification__title">ITGATE-GROUP</h3>
                 <span className="qualification__subtitle">
-                  End of Studies Internship
+                  Software Engineering Intern
                 </span>
                 <div className="qualification__calendar">
                   <i className="uil uil-calendar-alt"></i> 01/2021 - 05/2021
                 </div>
                 <span className="qualification__subtitle">
-                  Designed and developed a social media sentiment analysis
-                  platform.
+                  Built a social media sentiment analysis platform.
                   <br />
                   <strong>Tech Stack:</strong> Django, Python
                 </span>
               </div>
+
+              <div>
+                <span className="qualification__rounder"></span>
+              </div>
+              <div></div>
             </div>
           </div>
         </div>

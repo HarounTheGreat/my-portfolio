@@ -37,7 +37,7 @@ export const projectsData = [
   },
   {
     id: 5,
-    title: "Lead Designer – EPI Google Club",
+    title: "Designer - EPI Google Club",
     description:
       "Taught Photoshop and Illustrator design skills to club members.",
     image: GDSC,

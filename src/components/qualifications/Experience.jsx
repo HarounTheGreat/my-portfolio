@@ -7,7 +7,7 @@ const Experience = () => {
       {/* <h2 className="section__title">
         Experience
       </h2> */}
-      <h2 className="section__title">Full-Stack Web Developer at Start-up</h2>
+      <h2 className="section__title">Software Engineer at Smarteo</h2>
       <span className="section__subtitle">
         <div className="qualification__calendar">
           <i className="uil uil-calendar-alt"></i> 06/2023 - Present
@@ -19,13 +19,14 @@ const Experience = () => {
             {/* Project 1 */}
             <div className="qualification__data">
               <div>
-                <h3 className="qualification__title">Taxiora Backoffice </h3>
+                <h3 className="qualification__title">Taxiora ERP</h3>
                 <span className="qualification__subtitle">
-                  A comprehensive web application for managing clients, taxis,
-                  drivers, invoices, pricing, stock, and administration.
+                  Built the ERP interface and backend systems for drivers,
+                  taxis, invoices, pricing, stock, payments, and client
+                  operations.
                   <br />
-                  <strong>Tech Stack:</strong> React.js (Redux, Zod), PHP
-                  (Symfony)
+                  <strong>Tech Stack:</strong> React.js (Redux, Zod,
+                  TypeScript), PHP (Symfony), PostgreSQL
                 </span>
               </div>
 
@@ -46,11 +47,12 @@ const Experience = () => {
               <div>
                 <h3 className="qualification__title">Taxiora Booking</h3>
                 <span className="qualification__subtitle">
-                  A communication system between the booking mobile app and
-                  taximeters, ensuring seamless ride management.
+                  Real-time booking backend connecting mobile apps and smart
+                  taximeters with fleet tracking, matching, and fare
+                  estimation.
                   <br />
-                  <strong>Tech Stack:</strong> Node.js, Socket, RabbitMQ,
-                  Firebase, PostgreSQL, SQL, Cron Jobs
+                  <strong>Tech Stack:</strong> Node.js, Redis, MongoDB,
+                  PostgreSQL, Geocoding APIs, Python, Docker
                 </span>
               </div>
             </div>
@@ -62,10 +64,11 @@ const Experience = () => {
                   AMR Dashboard monitoring
                 </h3>
                 <span className="qualification__subtitle">
-                  web application for managing an Autonomous Mobile Robot (AMR)
-                  fleet.
+                  Real-time monitoring and control dashboard for an autonomous
+                  mobile robot fleet on an industrial factory floor.
                   <br />
-                  <strong>Tech Stack:</strong> PERN Stack, ROS, Gazebo
+                  <strong>Tech Stack:</strong> React.js, Node.js, PostgreSQL,
+                  ROS, Gazebo
                 </span>
               </div>
 
@@ -84,12 +87,12 @@ const Experience = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Jobzioo Back-Office </h3>
+                <h3 className="qualification__title">Jobzioo Backoffice</h3>
                 <span className="qualification__subtitle">
-                  An internal system for Jobzioo Tunisia to streamline user
-                  management, candidate tracking, job placement, and reporting.
+                  Internal job management system for candidate tracking, job
+                  placement, demand management, and reporting.
                   <br />
-                  <strong>Tech Stack:</strong> Angular
+                  <strong>Tech Stack:</strong> Angular, TypeScript, REST APIs
                 </span>
               </div>
             </div>

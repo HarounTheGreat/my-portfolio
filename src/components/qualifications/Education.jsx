@@ -20,7 +20,7 @@ const Education = () => {
                   EPI - International Multidisciplinary School
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 09/2021 - 01/2024
+                  <i className="uil uil-calendar-alt"></i> 09/2021 - 09/2024
                 </div>
               </div>
 
@@ -47,7 +47,7 @@ const Education = () => {
                   Communication Techniques
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 09/2018 - 07/2021
+                  <i className="uil uil-calendar-alt"></i> 09/2018 - 09/2023
                 </div>
               </div>
             </div>

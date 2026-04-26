@@ -52,10 +52,10 @@ const PersonalProject = () => {
   return (
     <section style={responsiveStyles.section}>
       <h2 style={responsiveStyles.title}>
-        From End-of-Study Project to AI-Driven Platform
+        AI-Driven Commercial Insights Platform
       </h2>
       <span style={responsiveStyles.subtitle}>
-        AI-Powered Business Insights Platform
+        AI Open Challenge 2022 Winning Project
       </span>
 
       <div style={{ maxWidth: "1200px", margin: "0 auto", padding: "0 1rem" }}>
@@ -75,9 +75,8 @@ const PersonalProject = () => {
               marginBottom: "1rem",
             }}
           >
-            Developed a prototype for a commercial platform based on my
-            end-of-studies project, aiming to provide AI-powered business
-            insights.
+            Built an AI-powered commercial insights platform based on original
+            research and led it to 1st place nationally.
           </h3>
 
           {/* Media Section */}
@@ -160,8 +159,7 @@ const PersonalProject = () => {
                 excellence.
               </li>
               <li style={{ marginBottom: "0.5rem", fontSize: "1rem" }}>
-                <strong>Tools Used:</strong> Angular, Python (Web Scraping, AI),
-                Power BI
+                <strong>Tools Used:</strong> Next.js, Python, Power BI
               </li>
             </ul>
           </div>
