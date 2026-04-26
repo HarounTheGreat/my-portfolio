@@ -2,13 +2,18 @@ import React from "react";
 import "./about.css";
 import AboutImg from "../../assets/about.jpg";
 import Info from "./Info";
+import RoughText from "../common/RoughText";
 
 const About = ({ content }) => {
   const cvUrl = `${process.env.PUBLIC_URL}${content.cvPath}`;
 
   return (
     <section className="about section" id="about">
-      <h2 className="section__title">About Me</h2>
+      <h2 className="section__title">
+        <RoughText type="highlight" color="#fde68a" strokeWidth={1} padding={2}>
+          About Me
+        </RoughText>
+      </h2>
       <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
         <img src={AboutImg} alt="" className="about__img" />

@@ -1,4 +1,5 @@
 import React from "react";
+import RoughText from "../common/RoughText";
 
 const Info = () => {
   return (
@@ -6,7 +7,11 @@ const Info = () => {
       <div className="about__box">
         <i class="bx bx-code-alt about__icon"></i>
         <h3 className="about__title">Experience</h3>
-        <span className="about__subtitle">2 years</span>
+        <span className="about__subtitle">
+          <RoughText type="circle" color="#f4b400" strokeWidth={1.5} padding={3}>
+            3 years
+          </RoughText>
+        </span>
       </div>
 
       <div className="about__box">

@@ -32,11 +32,11 @@ const roleContent = {
     ],
   },
   fullstack: {
-    heroTitle: "Full-Stack Engineer",
+    heroTitle: "software engineer",
     heroSubtitle:
       "Blending frontend experience and backend architecture to deliver complete, production-ready applications.",
     aboutSummary:
-      "Full-stack engineer comfortable across the product stack, from building polished interfaces in React to developing scalable backend services with Node.js and PHP Symfony.",
+      "software engineer comfortable across the product stack, from building polished interfaces in React to developing scalable backend services with Node.js and PHP Symfony.",
     cvPath: "/cv-fullstack.pdf",
     skillsOrder: [
       "frontend",

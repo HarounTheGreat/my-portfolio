@@ -1,4 +1,5 @@
 import React from "react";
+import RoughText from "../common/RoughText";
 
 const Data = ({ content }) => {
   return (
@@ -55,7 +56,11 @@ const Data = ({ content }) => {
           ></path>
         </svg>
       </h1>
-      <h3 className="home__subtitle">{content.heroTitle}</h3>
+      <h3 className="home__subtitle">
+        <RoughText type="underline" color="#f4b400" strokeWidth={2} padding={1}>
+          {content.heroTitle}
+        </RoughText>
+      </h3>
       <p className="home__description">{content.heroSubtitle}</p>
       <a href="#about" className="button button--flex">
         Say Hello
