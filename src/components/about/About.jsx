@@ -5,7 +5,7 @@ import Info from "./Info";
 import RoughText from "../common/RoughText";
 
 const About = ({ content }) => {
-  const cvUrl = `${process.env.PUBLIC_URL}${content.cvPath}`;
+  const cvUrl = `${import.meta.env.BASE_URL}${content.cvPath.replace(/^\//, "")}`;
 
   return (
     <section className="about section" id="about">
