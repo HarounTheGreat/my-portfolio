@@ -1,89 +1,163 @@
-import React from "react";
-import "./qualifications.css";
+import React, { useState } from "react";
+import { companies } from "../../data/experience";
 
-const smarteoProjects = [
-  {
-    title: "Taxiora ERP Frontend",
-    icon: "uil uil-briefcase-alt",
-    description:
-      "Full ERP operations interface built from scratch — driver management, pricing tiers, invoicing, and inventory. Used daily by operations teams.",
-    stack: "React, TypeScript, Redux, Zod, PHP (Symfony), PostgreSQL",
-  },
-  {
-    title: "Taxiora Booking",
-    icon: "uil uil-bolt-alt",
-    description:
-      "Real-time booking backend for a live 200+ taxi fleet. 85% latency reduction and 4x throughput increase via Redis migration and distributed locking. ML-assisted fare prediction trained on 10,000+ trips.",
-    stack:
-      "TypeScript, Node.js, Redis, MongoDB, PostgreSQL, Geocoding APIs, scikit-learn, Python, Docker",
-  },
-  {
-    title: "AMR Dashboard",
-    icon: "uil uil-chart-growth",
-    description:
-      "Real-time monitoring dashboard for an autonomous mobile robot fleet on a factory floor. Live state tracking via WebSockets reduced incident response time by 25–35%.",
-    stack: "React, TypeScript, Node.js, PostgreSQL, WebSockets, ROS, Gazebo",
-  },
-  {
-    title: "Jobzioo Backoffice",
-    icon: "uil uil-layers-alt",
-    description:
-      "Angular job management system built for a German international client. Modules for candidate tracking, job placement, demand management, and reporting. 100% on-time delivery.",
-    stack: "Angular, TypeScript, REST APIs",
-  },
-  {
-    title: "Taxiora Operator",
-    icon: "uil uil-bolt-alt",
-    description:
-      "Event-driven B2B dispatch SaaS for 200+ taxis — replaced manual Excel and Word workflows. RabbitMQ pipelines sync state from PostgreSQL to MongoDB with sub-second latency. Zone-based driver matching and full audit trails.",
-    stack: "TypeScript, Node.js, RabbitMQ, PostgreSQL, MongoDB, Docker",
-  },
-];
+// CodeIcon: small </> badge rendered left of each role title
+function CodeIcon() {
+  return (
+    <span
+      className="exp__role-icon"
+      aria-hidden="true"
+    >
+      {"</>"}
+    </span>
+  );
+}
 
-const Experience = () => {
+// ExpandIcon: chevron shown on collapsed roles
+function ExpandIcon() {
+  return (
+    <span
+      className="exp__chevron"
+      aria-hidden="true"
+    >
+      &#8964;
+    </span>
+  );
+}
+
+// CollapseIcon: × shown on expanded roles
+function CollapseIcon() {
+  return (
+    <span
+      className="exp__chevron exp__chevron--open"
+      aria-hidden="true"
+    >
+      &times;
+    </span>
+  );
+}
+
+// RoleEntry: one accordion row for a single role
+function RoleEntry({ role }) {
+  const [open, setOpen] = useState(role.defaultOpen);
+
+  return (
+    <div className="exp__role">
+      {/* Role header row — click to expand/collapse */}
+      <button
+        className="exp__role-header"
+        onClick={() => setOpen((prev) => !prev)}
+        aria-expanded={open}
+        aria-controls={`role-body-${role.id}`}
+      >
+        <CodeIcon />
+        <div className="exp__role-meta">
+          <span className="exp__role-title">{role.title}</span>
+          <span className="exp__role-sub">
+            {role.type}
+            <span
+              className="exp__role-sep"
+              aria-hidden="true"
+            >
+              {" "}
+              |{" "}
+            </span>
+            {role.period}
+          </span>
+        </div>
+        {open ? <CollapseIcon /> : <ExpandIcon />}
+      </button>
+
+      {/* Role body — bullets and tags, visible when open */}
+      {open && (
+        <div
+          id={`role-body-${role.id}`}
+          className="exp__role-body"
+        >
+          {role.bullets && role.bullets.length > 0 && (
+            <ul className="exp__bullets">
+              {role.bullets.map((bullet, i) => (
+                <li
+                  key={i}
+                  className="exp__bullet"
+                >
+                  {bullet}
+                </li>
+              ))}
+            </ul>
+          )}
+
+          {role.tags && role.tags.length > 0 && (
+            <div className="exp__tags">
+              {role.tags.map((tag) => (
+                <span
+                  key={tag}
+                  className="exp__tag"
+                >
+                  {tag}
+                </span>
+              ))}
+            </div>
+          )}
+        </div>
+      )}
+    </div>
+  );
+}
+
+// CompanyRow: avatar + name + active dot + list of role entries
+function CompanyRow({ company }) {
+  return (
+    <div className="exp__company">
+      {/* Company header: avatar and name */}
+      <div className="exp__company-header">
+        <span
+          className="exp__avatar"
+          style={{ backgroundColor: company.avatarColor }}
+          aria-hidden="true"
+        >
+          {company.initial}
+        </span>
+        <span className="exp__company-name">{company.name}</span>
+        {company.isCurrent && (
+          <span
+            className="exp__active-dot"
+            aria-label="current employer"
+          />
+        )}
+      </div>
+
+      {/* Role entries */}
+      <div className="exp__roles">
+        {company.roles.map((role) => (
+          <RoleEntry
+            key={role.id}
+            role={role}
+          />
+        ))}
+      </div>
+    </div>
+  );
+}
+
+// Experience: top-level section
+function Experience() {
   return (
     <section
-      className="qualification qualification--smarteo section"
+      className="exp section"
       id="experience"
     >
-      <h2 className="section__title">Full Stack Engineer at Smarteo</h2>
-      <span className="section__subtitle">
-        <div className="qualification__calendar qualification__calendar--smarteo">
-          <i className="uil uil-calendar-alt"></i> Jun 2023 – Present
-        </div>
-      </span>
-      <div className="qualification__container container">
-        <div className="qualification__sections qualification__sections--smarteo">
-          <div className="qualification__content qualification__content-active qualification__content--smarteo">
-            {smarteoProjects.map((project) => (
-              <div
-                className="qualification__data qualification__data--smarteo"
-                key={project.title}
-              >
-                <div className="qualification__panel qualification__panel--smarteo">
-                  <div className="qualification__eyebrow qualification__eyebrow--smarteo">
-                    Smarteo Project
-                  </div>
-                  <div className="qualification__title-row qualification__title-row--smarteo">
-                    <span className="qualification__card-icon qualification__card-icon--smarteo">
-                      <i className={project.icon}></i>
-                    </span>
-                    <h3 className="qualification__title">{project.title}</h3>
-                  </div>
-                  <p className="qualification__copy qualification__copy--smarteo">
-                    {project.description}
-                  </p>
-                  <p className="qualification__stack qualification__stack--smarteo">
-                    <strong>Tech Stack:</strong> {project.stack}
-                  </p>
-                </div>
-              </div>
-            ))}
-          </div>
-        </div>
+      <h2 className="section__title">Experience</h2>
+      <div className="exp__list">
+        {companies.map((company) => (
+          <CompanyRow
+            key={company.id}
+            company={company}
+          />
+        ))}
       </div>
     </section>
   );
-};
+}
 
 export default Experience;

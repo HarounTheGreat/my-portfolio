@@ -216,7 +216,237 @@
         width: 2.2rem;
         height: 2.2rem;
     }
-  
+
     
   }
+  
+/* ===== Experience Redesign — task 08 ===== */
+
+/* ── Section wrapper ── */
+.exp.section {
+  max-width: 740px;
+  margin-inline: auto;
+  padding-block: 3rem;
+}
+
+/* ── Company list ── */
+.exp__list {
+  display: flex;
+  flex-direction: column;
+  gap: 2.5rem;
+}
+
+/* ── Company block ── */
+.exp__company {
+  display: flex;
+  flex-direction: column;
+  gap: 0.25rem;
+}
+
+/* ── Company header row (avatar + name + dot) ── */
+.exp__company-header {
+  display: flex;
+  align-items: center;
+  gap: 0.625rem;
+  margin-bottom: 0.75rem;
+}
+
+/* ── Company avatar circle ── */
+.exp__avatar {
+  width: 38px;
+  height: 38px;
+  border-radius: 50%;
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  font-weight: 700;
+  color: #ffffff;
+  flex-shrink: 0;
+  text-transform: uppercase;
+}
+
+/* ── Company name ── */
+.exp__company-name {
+  font-family: "Poppins", sans-serif;
+  font-size: 1.125rem;
+  font-weight: 700;
+  color: #333333;
+}
+
+/* ── Active status dot (current employer) ── */
+.exp__active-dot {
+  width: 9px;
+  height: 9px;
+  border-radius: 50%;
+  background-color: #0000ee;
+  flex-shrink: 0;
+}
+
+/* ── Roles container ── */
+.exp__roles {
+  display: flex;
+  flex-direction: column;
+  border-top: 1px solid #e5e7eb;
+}
+
+/* ── Single role block ── */
+.exp__role {
+  border-bottom: 1px solid #e5e7eb;
+}
+
+/* ── Role header button ── */
+.exp__role-header {
+  width: 100%;
+  display: flex;
+  align-items: flex-start;
+  gap: 0.75rem;
+  padding: 1rem 0;
+  background: none;
+  border: none;
+  cursor: pointer;
+  text-align: left;
+}
+
+.exp__role-header:hover .exp__role-title {
+  color: #0000ee;
+}
+
+/* ── </> icon badge ── */
+.exp__role-icon {
+  display: inline-flex;
+  align-items: center;
+  justify-content: center;
+  width: 30px;
+  height: 30px;
+  border-radius: 6px;
+  background-color: #f0f0f0;
+  font-size: 0.625rem;
+  color: #666666;
+  font-family: "Courier New", monospace;
+  flex-shrink: 0;
+  margin-top: 2px;
+}
+
+/* ── Role title + sub-line wrapper ── */
+.exp__role-meta {
+  flex: 1;
+  display: flex;
+  flex-direction: column;
+  gap: 0.2rem;
+}
+
+/* ── Role title ── */
+.exp__role-title {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.9375rem;
+  font-weight: 600;
+  color: #333333;
+  transition: color 0.15s ease;
+}
+
+/* ── "Full-time | Jun 2023 – Present" ── */
+.exp__role-sub {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.8125rem;
+  color: #888888;
+  font-weight: 400;
+}
+
+.exp__role-sep {
+  margin-inline: 0.25rem;
+}
+
+/* ── Expand / collapse chevron ── */
+.exp__chevron {
+  font-size: 1.1rem;
+  color: #aaaaaa;
+  flex-shrink: 0;
+  margin-top: 4px;
+  line-height: 1;
+  transition: color 0.15s ease;
+}
+
+.exp__chevron--open {
+  font-size: 1.3rem;
+  margin-top: 2px;
+}
+
+/* ── Role body (bullets + tags) ── */
+.exp__role-body {
+  padding: 0.25rem 0 1.25rem 2.75rem;
+  display: flex;
+  flex-direction: column;
+  gap: 1rem;
+}
+
+/* ── Bullet list ── */
+.exp__bullets {
+  list-style: none;
+  padding: 0;
+  margin: 0;
+  display: flex;
+  flex-direction: column;
+  gap: 0.5rem;
+}
+
+/* ── Single bullet ── */
+.exp__bullet {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.875rem;
+  color: #444444;
+  line-height: 1.6;
+  padding-left: 1rem;
+  position: relative;
+}
+
+.exp__bullet::before {
+  content: "";
+  width: 5px;
+  height: 5px;
+  border-radius: 50%;
+  background-color: #aaaaaa;
+  position: absolute;
+  left: 0;
+  top: 0.55em;
+}
+
+/* ── Tech tags row ── */
+.exp__tags {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.5rem;
+}
+
+/* ── Single tech tag pill ── */
+.exp__tag {
+  font-family: "Poppins", sans-serif;
+  font-size: 0.75rem;
+  color: #555555;
+  padding: 0.25rem 0.625rem;
+  border: 1px solid #d1d5db;
+  border-radius: 999px;
+  background: transparent;
+  white-space: nowrap;
+}
+
+/* ── Responsive: mobile ── */
+@media (max-width: 600px) {
+  .exp.section {
+    padding-inline: 1rem;
+  }
+
+  .exp__role-body {
+    padding-left: 0;
+  }
+
+  .exp__role-icon {
+    display: none;
+  }
+
+  .exp__company-name {
+    font-size: 1rem;
+  }
+}
   
