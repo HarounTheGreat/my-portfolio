@@ -3,33 +3,40 @@ import "./qualifications.css";
 
 const smarteoProjects = [
   {
-    title: "Taxiora ERP",
+    title: "Taxiora ERP Frontend",
     icon: "uil uil-briefcase-alt",
     description:
-      "Built the ERP interface and backend systems for drivers, taxis, invoices, pricing, stock, payments, and client operations.",
-    stack: "React.js (Redux, Zod, TypeScript), PHP (Symfony), PostgreSQL",
+      "Full ERP operations interface built from scratch — driver management, pricing tiers, invoicing, and inventory. Used daily by operations teams.",
+    stack: "React, TypeScript, Redux, Zod, PHP (Symfony), PostgreSQL",
   },
   {
     title: "Taxiora Booking",
     icon: "uil uil-bolt-alt",
     description:
-      "Real-time booking backend connecting mobile apps and smart taximeters with fleet tracking, matching, and fare estimation.",
+      "Real-time booking backend for a live 200+ taxi fleet. 85% latency reduction and 4x throughput increase via Redis migration and distributed locking. ML-assisted fare prediction trained on 10,000+ trips.",
     stack:
-      "Node.js, Redis, MongoDB, PostgreSQL, Geocoding APIs, Python, Docker",
+      "TypeScript, Node.js, Redis, MongoDB, PostgreSQL, Geocoding APIs, scikit-learn, Python, Docker",
   },
   {
-    title: "AMR Dashboard monitoring",
+    title: "AMR Dashboard",
     icon: "uil uil-chart-growth",
     description:
-      "Real-time monitoring and control dashboard for an autonomous mobile robot fleet on an industrial factory floor.",
-    stack: "React.js, Node.js, PostgreSQL, ROS, Gazebo",
+      "Real-time monitoring dashboard for an autonomous mobile robot fleet on a factory floor. Live state tracking via WebSockets reduced incident response time by 25–35%.",
+    stack: "React, TypeScript, Node.js, PostgreSQL, WebSockets, ROS, Gazebo",
   },
   {
     title: "Jobzioo Backoffice",
     icon: "uil uil-layers-alt",
     description:
-      "Internal job management system for candidate tracking, job placement, demand management, and reporting.",
+      "Angular job management system built for a German international client. Modules for candidate tracking, job placement, demand management, and reporting. 100% on-time delivery.",
     stack: "Angular, TypeScript, REST APIs",
+  },
+  {
+    title: "Taxiora Operator",
+    icon: "uil uil-bolt-alt",
+    description:
+      "Event-driven B2B dispatch SaaS for 200+ taxis — replaced manual Excel and Word workflows. RabbitMQ pipelines sync state from PostgreSQL to MongoDB with sub-second latency. Zone-based driver matching and full audit trails.",
+    stack: "TypeScript, Node.js, RabbitMQ, PostgreSQL, MongoDB, Docker",
   },
 ];
 
@@ -39,10 +46,10 @@ const Experience = () => {
       className="qualification qualification--smarteo section"
       id="experience"
     >
-      <h2 className="section__title">Software Engineer at Smarteo</h2>
+      <h2 className="section__title">Full Stack Engineer at Smarteo</h2>
       <span className="section__subtitle">
         <div className="qualification__calendar qualification__calendar--smarteo">
-          <i className="uil uil-calendar-alt"></i> 06/2023 - Present
+          <i className="uil uil-calendar-alt"></i> Jun 2023 – Present
         </div>
       </span>
       <div className="qualification__container container">
