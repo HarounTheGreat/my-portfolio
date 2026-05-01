@@ -7,11 +7,14 @@ const Internships = () => {
       <h2 className="section__title">Internships</h2>
       <span className="section__subtitle">My Professional Training</span>
 
-      <div className="qualification__container container">
+      <div className="qualification__container qualification__container--timeline container">
         <div className="qualification__sections">
           <div className="qualification__content qualification__content-active">
-            {/* Internship 1 */}
-            <div className="qualification__data">
+            <div className="qualification__data qualification__data--timeline">
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">Smarteo</h3>
                 <span className="qualification__subtitle">
@@ -21,23 +24,15 @@ const Internships = () => {
                   <i className="uil uil-calendar-alt"></i> 12/2022 - 06/2023
                 </div>
                 <span className="qualification__subtitle">
-                  Built a full-stack blood donation management platform that
-                  led to a full-time conversion.
+                  Built a full-stack blood donation management platform that led
+                  to a full-time conversion.
                   <br />
                   <strong>Tech Stack:</strong> MERN Stack, Power BI
                 </span>
               </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
             </div>
 
-            {/* Internship 2 */}
-            <div className="qualification__data">
-              <div></div>
-
+            <div className="qualification__data qualification__data--timeline">
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
@@ -59,7 +54,10 @@ const Internships = () => {
               </div>
             </div>
 
-            <div className="qualification__data">
+            <div className="qualification__data qualification__data--timeline">
+              <div>
+                <span className="qualification__rounder"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">ITGATE-GROUP</h3>
                 <span className="qualification__subtitle">
@@ -74,11 +72,6 @@ const Internships = () => {
                   <strong>Tech Stack:</strong> Django, Python
                 </span>
               </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-              </div>
-              <div></div>
             </div>
           </div>
         </div>

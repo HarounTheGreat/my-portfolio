@@ -49,6 +49,10 @@
     column-gap: 1.5rem;
 }
 
+.qualification__data--timeline{
+    grid-template-columns: max-content minmax(0, 1fr);
+}
+
 .qualification__title{
     font-size: var(--normal-font-size);
     font-weight: var(--font-medium);
@@ -84,6 +88,14 @@
     transform: translate(6px, -7px);
 }
 
+.qualification__container--timeline{
+    max-width: 840px;
+}
+
+.qualification__container--timeline .qualification__sections{
+    grid-template-columns: 0.8fr;
+}
+
 @media screen and (max-width: 992px) {
     .qualification__container{
         margin-left: auto;
@@ -114,7 +126,5 @@
     .qualification__data{
         gap: 0.5rem;
     }
-  
-    
   }
   

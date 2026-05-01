@@ -13,11 +13,14 @@ const Experience = () => {
           <i className="uil uil-calendar-alt"></i> 06/2023 - Present
         </div>
       </span>
-      <div className="qualification__container container">
+      <div className="qualification__container qualification__container--timeline container">
         <div className="qualification__sections">
           <div className="qualification__content qualification__content-active">
-            {/* Project 1 */}
-            <div className="qualification__data">
+            <div className="qualification__data qualification__data--timeline">
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">Taxiora ERP</h3>
                 <span className="qualification__subtitle">
@@ -29,17 +32,9 @@ const Experience = () => {
                   TypeScript), PHP (Symfony), PostgreSQL
                 </span>
               </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
             </div>
 
-            {/* Project 2 */}
-            <div className="qualification__data">
-              <div></div>
-
+            <div className="qualification__data qualification__data--timeline">
               <div>
                 <span className="qualification__rounder"></span>
                 <span className="qualification__line"></span>
@@ -57,8 +52,11 @@ const Experience = () => {
               </div>
             </div>
 
-            {/* Project 3 */}
-            <div className="qualification__data">
+            <div className="qualification__data qualification__data--timeline">
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">
                   AMR Dashboard monitoring
@@ -71,20 +69,11 @@ const Experience = () => {
                   ROS, Gazebo
                 </span>
               </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
             </div>
 
-            {/* Project 4 */}
-            <div className="qualification__data">
-              <div></div>
-
+            <div className="qualification__data qualification__data--timeline">
               <div>
                 <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
               </div>
               <div>
                 <h3 className="qualification__title">Jobzioo Backoffice</h3>

@@ -7,13 +7,16 @@ const Education = () => {
       <h2 className="section__title">Education</h2>
       <span className="section__subtitle">My Personal Journey</span>
 
-      <div className="qualification__container container">
+      <div className="qualification__container qualification__container--timeline container">
         <div className="qualification__tabs qualification__button qualification__active button--flex"></div>
 
         <div className="qualification__sections">
           <div className="qualification__content qualification__content-active">
-            {/* Degree 1 */}
-            <div className="qualification__data">
+            <div className="qualification__data qualification__data--timeline">
+              <div>
+                <span className="qualification__rounder"></span>
+                <span className="qualification__line"></span>
+              </div>
               <div>
                 <h3 className="qualification__title">Software Engineering</h3>
                 <span className="qualification__subtitle">
@@ -23,20 +26,11 @@ const Education = () => {
                   <i className="uil uil-calendar-alt"></i> 09/2021 - 09/2024
                 </div>
               </div>
-
-              <div>
-                <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
-              </div>
             </div>
 
-            {/* Degree 2 */}
-            <div className="qualification__data">
-              <div></div>
-
+            <div className="qualification__data qualification__data--timeline">
               <div>
                 <span className="qualification__rounder"></span>
-                <span className="qualification__line"></span>
               </div>
               <div>
                 <h3 className="qualification__title">
