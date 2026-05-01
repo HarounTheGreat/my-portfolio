@@ -4,6 +4,7 @@
 /.pnp
 /build
 /tasks
+/task
 .pnp.js
 # testing
 /coverage
