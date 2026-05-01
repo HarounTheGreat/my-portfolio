@@ -8,8 +8,6 @@ const Education = () => {
       <span className="section__subtitle">My Personal Journey</span>
 
       <div className="qualification__container qualification__container--timeline container">
-        <div className="qualification__tabs qualification__button qualification__active button--flex"></div>
-
         <div className="qualification__sections">
           <div className="qualification__content qualification__content-active">
             <div className="qualification__data qualification__data--timeline">

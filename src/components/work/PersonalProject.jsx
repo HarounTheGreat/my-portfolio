@@ -124,6 +124,7 @@ const PersonalProject = () => {
             >
               <iframe
                 src={video1Link}
+                title="AI Open Challenge demo video 1"
                 style={responsiveStyles.iframe}
                 allow="autoplay"
               />
@@ -140,6 +141,7 @@ const PersonalProject = () => {
             >
               <iframe
                 src={video2Link}
+                title="AI Open Challenge demo video 2"
                 style={responsiveStyles.iframe}
                 allow="autoplay"
               />

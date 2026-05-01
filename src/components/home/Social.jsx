@@ -7,24 +7,27 @@ const Social = () => {
         href="https://www.linkedin.com/in/haroun-bouriga-2167a2196/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="bx bxl-linkedin"></i>
+        <i className="bx bxl-linkedin"></i>
       </a>
 
       <a
         href="https://github.com/HarounTheGreat"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt"></i>
       </a>
 
       <a
         href="https://www.facebook.com/haroun.bouriga.75/"
         className="home__social-icon"
         target="_blank"
+        rel="noreferrer"
       >
-        <i class="uil uil-facebook"></i>
+        <i className="uil uil-facebook"></i>
       </a>
     </div>
   );

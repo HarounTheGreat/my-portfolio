@@ -11,24 +11,27 @@ const Footer = () => {
             href="https://www.linkedin.com/in/haroun-bouriga-2167a2196/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-linkedin"></i>
+            <i className="uil uil-linkedin"></i>
           </a>
 
           <a
             href="https://github.com/HarounTheGreat"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-github-alt"></i>
+            <i className="uil uil-github-alt"></i>
           </a>
 
           <a
             href="https://www.facebook.com/haroun.bouriga.75/"
             className="footer__social-link"
             target="_blank"
+            rel="noreferrer"
           >
-            <i class="uil uil-facebook"></i>
+            <i className="uil uil-facebook"></i>
           </a>
         </div>
 

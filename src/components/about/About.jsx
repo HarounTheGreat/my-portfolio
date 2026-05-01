@@ -5,7 +5,10 @@ import Info from "./Info";
 import RoughText from "../common/RoughText";
 
 const About = ({ content }) => {
-  const cvUrl = `${process.env.PUBLIC_URL}${content.cvPath}`;
+  const cvUrl = `${import.meta.env.BASE_URL}${content.cvPath.replace(
+    /^\//,
+    ""
+  )}`;
 
   return (
     <section className="about section" id="about">
@@ -23,7 +26,7 @@ const About = ({ content }) => {
           <a download="haroun_CV" href={cvUrl} className="button button--flex">
             Download Resume
             <svg
-              class="button__icon"
+              className="button__icon"
               xmlns="http://www.w3.org/2000/svg"
               width="24"
               height="24"
