@@ -22,14 +22,15 @@ const Experience = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Taxiora ERP</h3>
+                <h3 className="qualification__title">Taxiora Booking</h3>
                 <span className="qualification__subtitle">
-                  Built the ERP interface and backend systems for drivers,
-                  taxis, invoices, pricing, stock, payments, and client
-                  operations.
+                  Real-time booking backend integrated with mobile apps and
+                  smart taximeters for zone-based matching, geocoding, and
+                  adaptive fare estimation.
                   <br />
-                  <strong>Tech Stack:</strong> React.js (Redux, Zod,
-                  TypeScript), PHP (Symfony), PostgreSQL
+                  <strong>Tech Stack:</strong> TypeScript, Node.js, Redis,
+                  MongoDB, PostgreSQL, Geocoding APIs, scikit-learn, Python,
+                  Docker
                 </span>
               </div>
             </div>
@@ -40,14 +41,13 @@ const Experience = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Taxiora Booking</h3>
+                <h3 className="qualification__title">Taxiora ERP</h3>
                 <span className="qualification__subtitle">
-                  Real-time booking backend connecting mobile apps and smart
-                  taximeters with fleet tracking, matching, and fare
-                  estimation.
+                  Revenue-critical finance engine for invoicing, billing,
+                  dynamic pricing, payments, and document generation.
                   <br />
-                  <strong>Tech Stack:</strong> Node.js, Redis, MongoDB,
-                  PostgreSQL, Geocoding APIs, Python, Docker
+                  <strong>Tech Stack:</strong> TypeScript, Node.js, PHP,
+                  Symfony, PostgreSQL, Docker
                 </span>
               </div>
             </div>
@@ -59,14 +59,15 @@ const Experience = () => {
               </div>
               <div>
                 <h3 className="qualification__title">
-                  AMR Dashboard monitoring
+                  Taxiora Operator
                 </h3>
                 <span className="qualification__subtitle">
-                  Real-time monitoring and control dashboard for an autonomous
-                  mobile robot fleet on an industrial factory floor.
+                  Event-driven B2B dispatch SaaS for 200+ taxis, replacing
+                  manual Excel and Word workflows with real-time fleet
+                  coordination.
                   <br />
-                  <strong>Tech Stack:</strong> React.js, Node.js, PostgreSQL,
-                  ROS, Gazebo
+                  <strong>Tech Stack:</strong> TypeScript, Node.js, PHP,
+                  RabbitMQ, PostgreSQL, MongoDB, Microservices, Docker
                 </span>
               </div>
             </div>
@@ -76,12 +77,14 @@ const Experience = () => {
                 <span className="qualification__rounder"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Jobzioo Backoffice</h3>
+                <h3 className="qualification__title">AMR Dashboard</h3>
                 <span className="qualification__subtitle">
-                  Internal job management system for candidate tracking, job
-                  placement, demand management, and reporting.
+                  Real-time monitoring and control dashboard for an autonomous
+                  mobile robot fleet with live state tracking and WebSockets
+                  integration.
                   <br />
-                  <strong>Tech Stack:</strong> Angular, TypeScript, REST APIs
+                  <strong>Tech Stack:</strong> React, TypeScript, Node.js,
+                  PostgreSQL, WebSockets, ROS, Gazebo
                 </span>
               </div>
             </div>

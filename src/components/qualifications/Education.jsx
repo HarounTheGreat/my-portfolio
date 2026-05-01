@@ -18,13 +18,19 @@ const Education = () => {
                 <span className="qualification__line"></span>
               </div>
               <div>
-                <h3 className="qualification__title">Software Engineering</h3>
+                <h3 className="qualification__title">
+                  Software Engineering Diploma
+                </h3>
                 <span className="qualification__subtitle">
-                  EPI - International Multidisciplinary School
+                  EPI (International Multidisciplinary School)
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 09/2021 - 09/2024
+                  <i className="uil uil-calendar-alt"></i> 09/2021 - 06/2024
                 </div>
+                <span className="qualification__subtitle">
+                  Focus: Software development, architecture, systems
+                  engineering
+                </span>
               </div>
             </div>
 
@@ -37,12 +43,16 @@ const Education = () => {
                   Bachelor’s Degree in Computer Networks
                 </h3>
                 <span className="qualification__subtitle">
-                  ISITCOM - Higher Institute of Computer Science and
-                  Communication Techniques
+                  ISITCOM (Higher Institute of Computer Science and
+                  Communication Techniques)
                 </span>
                 <div className="qualification__calendar">
-                  <i className="uil uil-calendar-alt"></i> 09/2018 - 09/2023
+                  <i className="uil uil-calendar-alt"></i> 09/2018 - 06/2021
                 </div>
+                <span className="qualification__subtitle">
+                  Focus: Computer networks, telecommunications, computer
+                  science fundamentals
+                </span>
               </div>
             </div>
           </div>

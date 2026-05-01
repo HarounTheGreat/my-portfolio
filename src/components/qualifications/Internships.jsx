@@ -24,10 +24,11 @@ const Internships = () => {
                   <i className="uil uil-calendar-alt"></i> 12/2022 - 06/2023
                 </div>
                 <span className="qualification__subtitle">
-                  Built a full-stack blood donation management platform that led
-                  to a full-time conversion.
+                  Full-stack blood donation management platform for donor and
+                  donation workflow management with analytics.
                   <br />
-                  <strong>Tech Stack:</strong> MERN Stack, Power BI
+                  <strong>Tech Stack:</strong> MongoDB, Express.js, React,
+                  Node.js, Power BI
                 </span>
               </div>
             </div>
@@ -46,8 +47,8 @@ const Internships = () => {
                   <i className="uil uil-calendar-alt"></i> 06/2022 - 08/2022
                 </div>
                 <span className="qualification__subtitle">
-                  Developed backend and frontend features, form validation, and
-                  internal web application improvements.
+                  Developed backend and frontend features and implemented form
+                  validation for internal web applications.
                   <br />
                   <strong>Tech Stack:</strong> PHP, JavaScript
                 </span>
@@ -67,9 +68,10 @@ const Internships = () => {
                   <i className="uil uil-calendar-alt"></i> 01/2021 - 05/2021
                 </div>
                 <span className="qualification__subtitle">
-                  Built a social media sentiment analysis platform.
+                  Built an NLP-based platform analyzing sentiment patterns in
+                  social content.
                   <br />
-                  <strong>Tech Stack:</strong> Django, Python
+                  <strong>Tech Stack:</strong> Python, Django
                 </span>
               </div>
             </div>
