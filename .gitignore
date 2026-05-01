@@ -3,6 +3,7 @@
 /node_modules
 /.pnp
 /build
+/dist
 /tasks
 /task
 .pnp.js
