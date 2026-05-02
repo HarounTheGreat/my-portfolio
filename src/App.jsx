@@ -23,8 +23,8 @@ function App() {
         <About content={content} />
         <Qualifications />
         <Work />
-        <Skills content={content} />
         <Services />
+        <Skills content={content} />
         <Contact />
       </main>
       <Footer />
