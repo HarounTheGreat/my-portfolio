@@ -4,15 +4,12 @@ import "./qualifications.css";
 const Experience = () => {
   return (
     <section className="qualification section" id="experience">
-      {/* <h2 className="section__title">
-        Experience
-      </h2> */}
       <h2 className="section__title">Software Engineer at Smarteo</h2>
-      <span className="section__subtitle">
+      <div className="section__subtitle">
         <div className="qualification__calendar">
           <i className="uil uil-calendar-alt"></i> 06/2023 - Present
         </div>
-      </span>
+      </div>
       <div className="qualification__container qualification__container--timeline container">
         <div className="qualification__sections">
           <div className="qualification__content qualification__content-active">

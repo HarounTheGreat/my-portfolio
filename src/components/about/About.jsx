@@ -19,7 +19,13 @@ const About = ({ content }) => {
       </h2>
       <span className="section__subtitle">My introduction</span>
       <div className="about__container container grid">
-        <img src={AboutImg} alt="" className="about__img" />
+        <img
+          src={AboutImg}
+          alt="Haroun Bouriga working at a laptop"
+          className="about__img"
+          loading="lazy"
+          decoding="async"
+        />
         <div className="about__data">
           <Info />
           <p className="about__description">{content.aboutSummary}</p>

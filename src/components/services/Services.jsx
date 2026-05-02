@@ -1,11 +1,28 @@
-import React, { useState } from "react";
+import React, { useEffect, useState } from "react";
 import "./services.css";
 
 const Services = () => {
   const [toggleState, setToggleState] = useState(0);
+
   const toggleTab = (index) => {
     setToggleState(index);
   };
+
+  useEffect(() => {
+    const handleEscape = (event) => {
+      if (event.key === "Escape") {
+        setToggleState(0);
+      }
+    };
+
+    if (toggleState !== 0) {
+      window.addEventListener("keydown", handleEscape);
+    }
+
+    return () => {
+      window.removeEventListener("keydown", handleEscape);
+    };
+  }, [toggleState]);
 
   return (
     <section className="services section" id="services">
@@ -15,15 +32,26 @@ const Services = () => {
         {/* Web Development Service */}
         <div className="services__content">
           <div>
-            <i className="uil uil-brackets-curly services__icon"></i>
+            <i
+              className="uil uil-brackets-curly services__icon"
+              aria-hidden="true"
+            ></i>
             <h3 className="services__title">
               Full-Stack <br /> Web Developer
             </h3>
           </div>
-          <span className="services__button" onClick={() => toggleTab(1)}>
+          <button
+            type="button"
+            className="services__button"
+            onClick={() => toggleTab(1)}
+            aria-expanded={toggleState === 1}
+          >
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
+            <i
+              className="uil uil-arrow-right services__button-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
 
           <div
             className={
@@ -33,10 +61,14 @@ const Services = () => {
             }
           >
             <div className="services__modal-content">
-              <i
+              <button
+                type="button"
                 onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              ></i>
+                className="services__modal-close"
+                aria-label="Close full-stack web developer details"
+              >
+                <i className="uil uil-times" aria-hidden="true"></i>
+              </button>
 
               <h3 className="services__modal-title">
                 Full-Stack Web Developer
@@ -81,15 +113,23 @@ const Services = () => {
         {/* Technical Writing Service */}
         <div className="services__content">
           <div>
-            <i className="uil uil-pen services__icon"></i>
+            <i className="uil uil-pen services__icon" aria-hidden="true"></i>
             <h3 className="services__title">
               Technical <br /> Writing
             </h3>
           </div>
-          <span className="services__button" onClick={() => toggleTab(2)}>
+          <button
+            type="button"
+            className="services__button"
+            onClick={() => toggleTab(2)}
+            aria-expanded={toggleState === 2}
+          >
             View More
-            <i className="uil uil-arrow-right services__button-icon"></i>
-          </span>
+            <i
+              className="uil uil-arrow-right services__button-icon"
+              aria-hidden="true"
+            ></i>
+          </button>
 
           <div
             className={
@@ -99,10 +139,14 @@ const Services = () => {
             }
           >
             <div className="services__modal-content">
-              <i
+              <button
+                type="button"
                 onClick={() => toggleTab(0)}
-                className="uil uil-times services__modal-close"
-              ></i>
+                className="services__modal-close"
+                aria-label="Close technical writing details"
+              >
+                <i className="uil uil-times" aria-hidden="true"></i>
+              </button>
 
               <h3 className="services__modal-title">Technical Writer</h3>
               <p className="services__modal-description">

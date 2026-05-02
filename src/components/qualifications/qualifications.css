@@ -9,7 +9,8 @@
 }
 
 .qualification__content-active{
-    display: block;
+    display: grid;
+    gap: 1rem;
 }
 
 .qualification__data{
@@ -20,40 +21,70 @@
 
 .qualification__data--timeline{
     grid-template-columns: max-content minmax(0, 1fr);
+    align-items: start;
+    column-gap: 1.25rem;
+}
+
+.qualification__data--timeline > div:last-child{
+    background-color: var(--surface-muted);
+    border: 1px solid var(--border-color);
+    border-radius: 1rem;
+    padding: 1rem 1.15rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.qualification__data--timeline:hover > div:last-child{
+    transform: translateY(-3px);
+    box-shadow: var(--shadow-md);
 }
 
 .qualification__title{
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
+    margin-bottom: 0.35rem;
 }
 
 .qualification__subtitle {
     display: inline-block;
     font-size: var(--small-font-size);
-    margin-bottom: var(--mb-1);
-    white-space: normal; /* Allow text to wrap to new lines */
-    word-wrap: break-word; /* Break long words if necessary */
-    overflow-wrap: break-word; /* Ensure long words break properly */
-    max-width: 100%; /* Ensure text doesn't exceed container width */
-  }
+    margin-bottom: 0.7rem;
+    white-space: normal;
+    word-wrap: break-word;
+    overflow-wrap: break-word;
+    max-width: 100%;
+    line-height: 1.8;
+    color: hsl(var(--hue), var(--sat), 42%);
+}
+
+.qualification__subtitle:last-child{
+    margin-bottom: 0;
+}
+
+.qualification__subtitle strong{
+    color: var(--title-color);
+}
 
 .qualification__calendar{
     font-size: var(--small-font-size);
+    color: hsl(var(--hue), var(--sat), 38%);
+    margin-bottom: 0.7rem;
 }
 
 .qualification__rounder{
     display: inline-block;
     width: 13px;
     height: 13px;
-    background-color: var(--text-color);
+    background-color: var(--accent-color);
     border-radius: 50%;
+    box-shadow: 0 0 0 4px rgba(255, 30, 0, 0.1);
 }
 
 .qualification__line{
     display: block;
     width: 1px;
     height: 100%;
-    background-color: var(--text-color);
+    background-color: rgba(0, 0, 0, 0.16);
     transform: translate(6px, -7px);
 }
 

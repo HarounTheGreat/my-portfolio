@@ -7,9 +7,16 @@
 
 .services__content{
     position: relative;
-    border: 1px solid rgba(0, 0, 0, 0.1);
-    background-color: var(--container-color);
+    border: 1px solid var(--border-color);
+    background-color: var(--surface-muted);
     padding: 6rem 0 2rem 2.5rem;
+    border-radius: 1.5rem;
+    box-shadow: var(--shadow-sm);
+}
+
+.services__content:hover{
+    transform: translateY(-4px);
+    box-shadow: var(--shadow-md);
 }
 
 .services__icon{
@@ -32,6 +39,8 @@
     align-items: center;
     column-gap: 0.25rem;
     cursor: pointer;
+    font-weight: var(--font-medium);
+    padding: 0;
 }
 
 .services__button-icon{
@@ -42,6 +51,10 @@
 
 .services__button:hover .services__button-icon{
     transform: translateX(00.25rem);
+}
+
+.services__button:hover{
+    color: var(--accent-color);
 }
 
 .services__modal{
@@ -67,6 +80,7 @@
     background-color: var(--container-color);
     padding: 4.5rem 2.5rem 2.5rem;
     border-radius: 1.5rem;
+    box-shadow: var(--shadow-md);
 }
 
 
@@ -78,6 +92,7 @@
     color: var(--title-color);
     cursor: pointer;
     transition: 0.3s;
+    padding: 0.2rem;
 }
 
 .services__modal-title, .services__modal-description{

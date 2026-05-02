@@ -4,10 +4,11 @@
     bottom: -20%;
     background-color: var(--title-color);
     opacity: 0.8;
-    padding: 0.3rem 0.5rem;
-    border-radius: 0.4rem;
+    padding: 0.4rem 0.55rem;
+    border-radius: 0.65rem;
     z-index: var(--z-tooltip);
     transition: 0.4s;
+    box-shadow: 0 14px 30px rgba(15, 23, 42, 0.16);
 }
 
 .scrollup__icon{
@@ -17,6 +18,8 @@
 
 .scrollup:hover{
     background-color: var(--title-color-dark);
+    opacity: 1;
+    transform: translateY(-3px);
 }
 
 /* Show Scroll */

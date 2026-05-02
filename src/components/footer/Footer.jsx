@@ -12,8 +12,9 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit Haroun Bouriga on LinkedIn"
           >
-            <i className="uil uil-linkedin"></i>
+            <i className="uil uil-linkedin" aria-hidden="true"></i>
           </a>
 
           <a
@@ -21,8 +22,9 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit Haroun Bouriga on GitHub"
           >
-            <i className="uil uil-github-alt"></i>
+            <i className="uil uil-github-alt" aria-hidden="true"></i>
           </a>
 
           <a
@@ -30,8 +32,9 @@ const Footer = () => {
             className="footer__social-link"
             target="_blank"
             rel="noreferrer"
+            aria-label="Visit Haroun Bouriga on Facebook"
           >
-            <i className="uil uil-facebook"></i>
+            <i className="uil uil-facebook" aria-hidden="true"></i>
           </a>
         </div>
 

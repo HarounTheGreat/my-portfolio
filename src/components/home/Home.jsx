@@ -10,7 +10,11 @@ const Home = ({ content }) => {
       <div className="home__container container grid">
         <div className="home__content grid">
           <Social />
-          <div className="home__img"></div>
+          <div
+            className="home__img"
+            role="img"
+            aria-label="Portrait of Haroun Bouriga"
+          ></div>
 
           <Data content={content} />
         </div>

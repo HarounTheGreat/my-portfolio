@@ -8,8 +8,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"
+        aria-label="Visit Haroun Bouriga on LinkedIn"
       >
-        <i className="bx bxl-linkedin"></i>
+        <i className="bx bxl-linkedin" aria-hidden="true"></i>
       </a>
 
       <a
@@ -17,8 +18,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"
+        aria-label="Visit Haroun Bouriga on GitHub"
       >
-        <i className="uil uil-github-alt"></i>
+        <i className="uil uil-github-alt" aria-hidden="true"></i>
       </a>
 
       <a
@@ -26,8 +28,9 @@ const Social = () => {
         className="home__social-icon"
         target="_blank"
         rel="noreferrer"
+        aria-label="Visit Haroun Bouriga on Facebook"
       >
-        <i className="uil uil-facebook"></i>
+        <i className="uil uil-facebook" aria-hidden="true"></i>
       </a>
     </div>
   );

@@ -24,44 +24,56 @@
     grid-template-columns: repeat(2, max-content);
     gap: 3rem;
     justify-content: center;
+    align-items: stretch;
 }
 
 .work__card{
-    background-color: var(--container-color);
-    border: 1px solid rgba(0, 0, 0, 0.1);
+    background-color: var(--surface-muted);
+    border: 1px solid var(--border-color);
     padding: 1.25rem;
-    border-radius: 1rem;
+    border-radius: 1.25rem;
+    box-shadow: var(--shadow-sm);
 }
 
 .work__img {
-    width: 100%; /* Full width by default */
-    height: auto; /* Maintain aspect ratio */
+    width: 100%;
+    aspect-ratio: 4 / 3;
+    object-fit: cover;
     border-radius: 1rem;
     margin-bottom: var(--mb-1);
-  }
+    box-shadow: 0 12px 24px rgba(15, 23, 42, 0.08);
+}
   
-  @media screen and (min-width: 768px) {
+@media screen and (min-width: 768px) {
     .work__img {
-      max-width: 500px; /* Adjust this value as needed */
-      margin: 0 auto; /* Center the image */
+      max-width: 500px;
+      margin: 0 auto;
     }
-  }
+}
   
-  @media screen and (max-width: 768px) {
+@media screen and (max-width: 768px) {
     .work__img {
-      width: 100%; /* Full width on smaller screens */
+      width: 100%;
     }
-  }
-  .work__img:hover {
-    transform: scale(1.05); /* Scale up the image by 5% on hover */
-    box-shadow: 0 8px 16px rgba(0, 0, 0, 0.2); /* Add a shadow on hover */
-  }
+}
+
+.work__img:hover {
+    transform: scale(1.02);
+    box-shadow: 0 18px 32px rgba(15, 23, 42, 0.12);
+}
   
 
 .work__title{
     font-size: var(--normal-font-size);
-    font-weight: var(--font-medium);
+    font-weight: var(--font-semi-bold);
+    color: var(--title-color);
     margin-bottom: var(--mb-0-5);
+}
+
+.work__description{
+    display: block;
+    color: hsl(var(--hue), var(--sat), 42%);
+    line-height: 1.75;
 }
 
 .work__button{
@@ -128,6 +140,6 @@
   }
 
   .work__card:hover{
-    transition: 0.3s;
-    background-color: rgb(219, 219, 219);
+    transform: translateY(-5px);
+    box-shadow: var(--shadow-md);
   }

@@ -4,12 +4,15 @@ import "./header.css";
 const Header = () => {
   const [Toggle, showMenu] = useState(false);
   const [activeNav, setActiveNav] = useState("#home");
+  const [isScrolled, setIsScrolled] = useState(false);
 
   useEffect(() => {
     const handleScroll = () => {
       const sections = document.querySelectorAll("section[id]");
       const scrollPosition =
         window.pageYOffset || document.documentElement.scrollTop;
+
+      setIsScrolled(scrollPosition > 24);
 
       for (let i = 0; i < sections.length; i++) {
         const currentSection = sections[i];
@@ -30,12 +33,15 @@ const Header = () => {
   }, []);
 
   return (
-    <header className="header">
+    <header className={isScrolled ? "header scroll-header" : "header"}>
       <nav className="nav container">
-        <a href="index.html" className="nav_logo">
+        <a href="#home" className="nav_logo" aria-label="Go to home section">
           Haroun
         </a>
-        <div className={Toggle ? "nav__menu show-menu" : "nav__menu"}>
+        <div
+          id="primary-navigation"
+          className={Toggle ? "nav__menu show-menu" : "nav__menu"}
+        >
           <ul className="nav__list grid">
             <li className="nav__item">
               <a
@@ -43,8 +49,10 @@ const Header = () => {
                 className={
                   activeNav === "#home" ? "nav__link active-link" : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-estate nav__icon"></i>Home
+                <i className="uil uil-estate nav__icon" aria-hidden="true"></i>
+                Home
               </a>
             </li>
             <li className="nav__item">
@@ -53,8 +61,10 @@ const Header = () => {
                 className={
                   activeNav === "#about" ? "nav__link active-link" : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-user nav__icon"></i>About
+                <i className="uil uil-user nav__icon" aria-hidden="true"></i>
+                About
               </a>
             </li>
 
@@ -66,8 +76,10 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-file-alt nav__icon"></i>Experience
+                <i className="uil uil-file-alt nav__icon" aria-hidden="true"></i>
+                Experience
               </a>
             </li>
 
@@ -79,8 +91,10 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-file-alt nav__icon"></i>Education
+                <i className="uil uil-file-alt nav__icon" aria-hidden="true"></i>
+                Education
               </a>
             </li>
 
@@ -92,8 +106,10 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-scenery nav__icon"></i>Achievements
+                <i className="uil uil-scenery nav__icon" aria-hidden="true"></i>
+                Achievements
               </a>
             </li>
 
@@ -105,8 +121,13 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-briefcase-alt nav__icon"></i>Services
+                <i
+                  className="uil uil-briefcase-alt nav__icon"
+                  aria-hidden="true"
+                ></i>
+                Services
               </a>
             </li>
 
@@ -118,8 +139,10 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-file-alt nav__icon"></i>Skills
+                <i className="uil uil-file-alt nav__icon" aria-hidden="true"></i>
+                Skills
               </a>
             </li>
 
@@ -131,20 +154,33 @@ const Header = () => {
                     ? "nav__link active-link"
                     : "nav__link"
                 }
+                onClick={() => showMenu(false)}
               >
-                <i className="uil uil-message nav__icon"></i>Contact
+                <i className="uil uil-message nav__icon" aria-hidden="true"></i>
+                Contact
               </a>
             </li>
           </ul>
-          <i
-            className="uil uil-times nav__close"
-            onClick={() => showMenu(!Toggle)}
-          ></i>
+          <button
+            type="button"
+            className="nav__close"
+            onClick={() => showMenu(false)}
+            aria-label="Close navigation menu"
+          >
+            <i className="uil uil-times" aria-hidden="true"></i>
+          </button>
         </div>
 
-        <div className="nav__toggle" onClick={() => showMenu(!Toggle)}>
-          <i className="uil uil-apps"></i>
-        </div>
+        <button
+          type="button"
+          className="nav__toggle"
+          onClick={() => showMenu(!Toggle)}
+          aria-expanded={Toggle}
+          aria-controls="primary-navigation"
+          aria-label="Open navigation menu"
+        >
+          <i className="uil uil-apps" aria-hidden="true"></i>
+        </button>
       </nav>
     </header>
   );
